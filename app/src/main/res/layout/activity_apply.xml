@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:textColor="#ffd3d3d3"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/ppc2"
+            android:layout_width="126dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView android:id="@+id/apply"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#000000"
+            android:text="Apply for PayPal Credit"
+            android:textSize="20dip"/>
+
+        <TextView android:id="@+id/desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#6c7378"
+            android:text="You’re applying for a credit line you can use to pay for future purchases when you shop with PayPal."
+            android:textSize="16dip"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView android:id="@+id/personal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#000000"
+            android:text="Your personal information"
+            android:textSize="20dip"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:textColor="#6c7378"
+            android:weightSum="4" >
+            <Spinner
+                android:id="@+id/input_month"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <Spinner
+                android:id="@+id/input_day"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <Spinner
+                android:id="@+id/input_year"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText android:id="@+id/input_ssn"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="4"
+                android:hint="SSN"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView android:id="@+id/billing"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#000000"
+            android:text="Billing address"
+            android:textSize="20dip"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#6c7378"
+            android:layout_marginBottom="8dp">
+            android:weightSum="2" >
+            <EditText android:id="@+id/input_firstName"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_weight="1"
+                android:hint="First Name" />
+            <EditText android:id="@+id/input_lastName"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_weight="1"
+                android:hint="Last Name"/>
+        </LinearLayout>
+
+        <EditText android:id="@+id/input_street"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_weight="0.15"
+            android:hint="Street Name" />
+
+        <EditText android:id="@+id/input_street2"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_weight="0.09"
+            android:hint="Apt., ste., bldg., etc (optional)" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#6c7378"
+            android:layout_marginBottom="8dp">
+            android:weightSum="3" >
+            <EditText android:id="@+id/input_city"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_weight="1"
+                android:hint="City" />
+            <EditText android:id="@+id/input_state"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_weight="1"
+                android:hint="State"/>
+            <EditText android:id="@+id/input_zip"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_weight="1"
+                android:hint="ZIP"/>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#6c7378"
+            android:layout_marginBottom="8dp">
+            android:weightSum="2" >
+            <EditText android:id="@+id/input_email"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_weight="1"
+                android:hint="Mobile" />
+            <EditText android:id="@+id/input_password"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_weight="1"
+                android:hint="Phone number"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#6c7378"
+            android:text="If you provide your mobile number, you give PayPal and Comenity Capital Bank permission to contact you about your PayPal branded accounts, including PayPal Credit, using automated calls or texts to: service your accounts, investigate fraud, or collect a debt, but not for telemarketing. If you don’t want to receive automated calls or texts, you can change your preferences in your account settings at any time."
+            android:textSize="16dip"/>
+
+        <TextView android:id="@+id/legal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#6c7378"
+            android:text="By clicking Agree and Continue, I confirm that I have read the E-Sign Consent and I agree to have the Terms and Conditions presented electronically."
+            android:textSize="16dip"/>
+
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:textColor="#ffffff"
+            android:background="#0070BA"
+            android:text="Agree and Continue"/>
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnCapture2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="test"/>
+
+
+        <TextView android:id="@+id/bank"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#6c7378"
+            android:text="The lender for PayPal Credit accounts is Comenity Capital Bank"
+            android:textSize="16dip"/>
+
+    </LinearLayout>
+</ScrollView>

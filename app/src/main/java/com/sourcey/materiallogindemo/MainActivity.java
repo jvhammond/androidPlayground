@@ -5,17 +5,28 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+import io.fabric.sdk.android.Fabric;
 
 
 public class MainActivity extends ActionBarActivity {
 
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "j7j3mK8vgABa1BbjKmMTbiGAU";
+    private static final String TWITTER_SECRET = "UxsSmCqntXJDCPlFyGvOR79nRU9jOPVfbXCdQ6mjLKG1K00cVn";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+        Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_main);
 
 
-        Intent intent = new Intent(this, LoginActivity.class);
+        //Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, ApplyActivity.class);
         startActivity(intent);
     }
 

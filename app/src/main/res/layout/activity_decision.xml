@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:textColor="#ffd3d3d3"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:weightSum="1">
+
+        <TextView android:id="@+id/decision"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#6c7378"
+            android:gravity="center"
+            android:text="You've Been APPROVED!"
+            android:textSize="32dip"
+            android:layout_weight="0.27" />
+
+        <ImageView android:src="@drawable/success"
+            android:layout_width="338dp"
+            android:layout_height="112dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/imageDecision"
+            android:layout_weight="0.07" />
+
+        <!--<ImageView android:src="@drawable/switzer_sm"-->
+            <!--android:layout_width="338dp"-->
+            <!--android:layout_height="112dp"-->
+            <!--android:layout_marginBottom="24dp"-->
+            <!--android:gravity="center"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitCenter" />-->
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:textColor="#ffffff"
+            android:background="#0070BA"
+            android:text="Share"/>
+    </LinearLayout>
+</ScrollView>
